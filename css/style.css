@@ -1,9 +1,57 @@
 div {
-    border: green solid 3px;
-    margin: 5px;
-    padding: 5px;
+    /* border: green solid 3px;
+    margin: 2px;
+    padding: 3px; */
 }
 
+body {
+    background-color: orange;
+}
+
+.logo {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin: 4px;
+}
+
+.social-media img {
+    width: 30%;
+}
+
+.training-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+
+.training-option img {
+    width: 85%;
+}
+
+.training-option h3 {
+    color: blueviolet;
+}
 
 header  {
     background-color: orange;
@@ -12,8 +60,56 @@ header  {
     align-items: center;
 }
 
+header h1 {
+    color: rgb(26, 48, 247);
+    margin: 2px;
+}
+
 footer {
     background-color: orange;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    header .header-title {
+        padding-left: 15%;
+        font-size: 50px;
+    }
+    .logo {
+        margin-left: 5%;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .social-media img { 
+        margin: 10%;
+    }
+    .contact-info {
+        display: flex;
+        align-items: flex-end;
+    }
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main-content img {
+        width: 350px;
+        height: 350px;
+    }
 }
